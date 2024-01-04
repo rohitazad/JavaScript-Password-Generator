@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container">
+        <h1>JavaScript Password Generator</h1>
+        <div class="options">
+            <div class="formGroup">
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" min="8" max="24" value="12" />
+            </div>
+            <div class="formGroup">
+                <label for="uppercase">Include UpperCase:</label>
+                <input type="checkbox" id="uppercase" checked/>
+            </div>
+            <div class="formGroup">
+                <label for="lowercase">Include LowerCase:</label>
+                <input type="checkbox" id="lowercase" checked/>
+            </div>
+            <div class="formGroup">
+                <label for="numbers">Include Numbers:</label>
+                <input type="checkbox" id="numbers" checked/>
+            </div>
+            <div class="formGroup">
+                <label for="specractors">Include Special Characters:</label>
+                <input type="checkbox" id="specractors" checked/>
+            </div>
+            <div class="formGroup">
+                <button id="genrate">Genrators Password</button>
+            </div>
+            <div class="result">
+                <input type="text" id="password" readonly />
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js" ></script>
+</body>
+</html>
